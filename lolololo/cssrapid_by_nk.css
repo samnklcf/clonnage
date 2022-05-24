@@ -1,0 +1,459 @@
+:root{
+    --orange: #FFA552;
+    --bleu: #78C3FB;
+    --bleu-fonce: #5896c6;
+    --jaune: #FFBC42;
+    --vert-pal: #6A8D73;
+    --vert-bleu: #17BEBB;
+    --rose: #B6465F;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.border-none {
+    border: none;
+}
+.bg-none {
+    background: none;
+}
+
+/* -----------partie des boutons--------- */
+.btn-small {
+    padding: 16px 30px;
+    border: none;
+}
+
+.btn-normal {
+    padding: 16px 50px;
+    border: none;
+}
+.btn-big {
+    padding: 20px 100px;
+    border: none;
+}
+
+/* --------partie radius-------------- */
+
+.radius-small{
+    border-radius: 5px;
+}
+.radius-normal{
+    border-radius: 40px;
+}
+.radius-top-left {
+    border-top-left-radius: 40px;
+}
+.radius-top-right {
+    border-top-right-radius: 40px;
+}
+.border-bottom-right-radius {
+    border-bottom-right-radius: 40px;
+}
+.border-bottom-left-radius {
+    border-bottom-left-radius: 40px;
+}
+/* --------------Faire des formes------------ */
+
+.circle {
+    border-radius: 50%;
+}
+
+/* -------------------container------------------- */
+
+.container-100 {
+    padding: 0 100px;
+    height: auto;
+}
+.container-150 {
+    padding: 0 150px;
+    height: auto;
+}
+.container-center {
+    margin:auto;
+}
+
+
+/* ---------------Alignement de text-------------- */
+.text-center {
+    text-align: center;
+}
+.text-end {
+    text-align: end;
+}
+.text-justify {
+    text-align: justify;
+}
+.text-left {
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+/* -------------flex----------------- */
+
+.flex {
+    display: flex;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-start {
+    justify-content: start;
+}
+.justify-content-end {
+    justify-content: end;
+}
+.align-items-center {
+    align-items: center;
+}
+.align-items-flex-end {
+    align-items: flex-end;
+}
+.align-items-flex-start {
+    align-items: flex-start;
+}
+
+.flex-column {
+    flex-direction: column;
+    -ms-flex-direction: column;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+.space-around {
+    justify-content: space-around;
+}
+
+
+/* -------------grid----------------- */
+.grid {
+    display: grid;
+}
+.col4 {
+    grid-template-columns: repeat(4, 25%);
+    justify-content: center;
+}
+
+.col5 {
+    grid-template-columns: repeat(5, 20%);
+    justify-content: center;
+}
+
+.col3 {
+    grid-template-columns: repeat(3, 33.33%);
+    justify-content: center;
+}
+.col2 {
+    grid-template-columns: repeat(2, 50%);
+    justify-content: center;
+}
+
+.width-100 {
+    width: 100%;
+}
+.height-100 {
+    width: 100vh;
+}
+
+
+.gap10 {
+    gap: 10px;
+}
+.gap20 {
+    gap: 20px;
+}
+.gap30 {
+    gap: 30px;
+}
+.gap40 {
+    gap: 40px;
+}
+.gap50 {
+    gap: 50px;
+}
+
+/* ----------partie animation --------- */
+.transition01s {
+    transition: all .1s;
+}
+.transition02s {
+    transition: all .2s;
+}
+.transition03s {
+    transition: all .3s;
+}
+.transition04s {
+    transition: all .4s;
+}
+.transition05s {
+    transition: all .5s;
+}
+.transition1s {
+    transition: all 1s;
+}
+
+.ease-in {
+    transition-timing-function: ease-in;
+}
+
+.ease-out {
+    transition-timing-function: ease-out;
+}
+.ease-in-out {
+    transition-timing-function: ease-in-out;
+}
+
+.delay1s {
+    transition-delay: 1s;
+}
+.delay05s {
+    transition-delay: .5s;
+}
+
+.scale:hover {
+    transform: scale(1.1);
+}
+.rotate:hover {
+    transform: rotateZ(-2deg);
+}
+.rotate-all-Z:hover {
+    transform: rotateZ(360deg);
+}
+.rotate-all-Y:hover {
+    transform: rotateY(360deg);
+}
+.rotate-all-X:hover {
+    transform: rotateX(360deg);
+}
+
+/* -----------------------Animation personnalité------------------------------ */
+.scale-rotate-left:hover {
+    transform: rotateZ(-2deg) scale(1.1);
+}
+.scale-rotate-right:hover {
+    transform: rotateZ(2deg) scale(1.1);
+}
+.shadow-anime:hover {
+    box-shadow: -8px 8px 0px black;
+}
+
+/* ----------Animation-------- */
+.batement{
+    box-shadow: 0 0 0 0 black;
+    animation: batement 1.3s infinite;
+}
+@keyframes batement {
+    to {
+        box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.01);
+    }
+}
+
+.non:hover {
+    animation: non .4s forwards;
+}
+@keyframes non {
+    0% {
+        transform: translateX(0px);
+    }
+    20% {
+        transform: translateX(-5px);
+    }
+    40% {
+        transform: translateX(5px);
+    }
+    60% {
+        transform: translateX(-5px);
+    }
+    80% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+
+}
+.oui:hover {
+    animation: oui .4s forwards;
+}
+@keyframes oui {
+    0% {
+        transform: translateY(0px);
+    }
+    20% {
+        transform: translateY(-10px);
+    }
+    40% {
+        transform: translateY(10px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+    80% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+.boule:hover {
+    animation: boule 4s infinite;
+}
+@keyframes boule {
+    0% {
+        transform: skewX(2deg);
+    }
+    20% {
+        transform: skewX(-2deg);
+    }
+    40% {
+        transform: skewX(2deg);
+    }
+    60% {
+        transform: skewX(-4deg);
+    }
+    80% {
+        transform: skewX(4deg);
+    }
+    100% {
+        transform: skewX(2deg);
+    }
+
+}
+
+.glisser-haut {
+    animation: haut .5s ease-out;
+}
+@keyframes haut {
+    from{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.glisser-droite {
+    animation: droite .5s ease-out;
+}
+@keyframes droite {
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+        
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
+}
+.glisser-gauche {
+    animation: gauche .5s ease-out;
+}
+@keyframes gauche {
+    from{
+        opacity: 0;
+        transform: translateX(100%);
+        
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
+}
+.glisser-bas {
+    animation: bas .5s ease-out;
+}
+@keyframes bas {
+    from{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* ------------cursor-------- */
+.pointer {
+    cursor: pointer;
+
+}
+
+/* ------------signifiant-------- */
+.liste {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.shadow {
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* -------------partie media------------- */
+
+@media all and (max-width: 900px) {
+    .col4 {
+        grid-template-columns: repeat(3, 32%);
+    }
+    .col5 {
+        grid-template-columns: repeat(4, 20%);
+        justify-content: center;
+    }
+    .col3 {
+        grid-template-columns: repeat(2, 33.33%);
+        justify-content: center;
+    }
+    .col2 {
+        grid-template-columns: repeat(1, 50%);
+        justify-content: center;
+    }
+}
+@media all and (max-width: 650px) {
+    .col4 {
+        grid-template-columns: repeat(2, 32%);
+    } 
+    .col5 {
+        grid-template-columns: repeat(3, 20%);
+        justify-content: center;
+    }
+    .col3 {
+        grid-template-columns: repeat(1, 33.33%);
+        justify-content: center;
+    }
+    .col2 {
+        grid-template-columns: repeat(1, 50%);
+        justify-content: center;
+    }
+}
+@media all and (max-width: 400px) {
+    .col4 {
+        grid-template-columns: repeat(1, 32%);
+    } 
+    .col5 {
+        grid-template-columns: repeat(2, 20%);
+        justify-content: center;
+    }
+    .col2 {
+        grid-template-columns: repeat(1, 50%);
+        justify-content: center;
+    }
+}
+
