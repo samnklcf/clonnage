@@ -5,7 +5,12 @@ body {
 header {
     height: 60px;
     box-shadow: 0 0 25px rgba(97, 97, 97, 0.233);
-    padding: 0 40px;
+    padding: 0 40px !important;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
 }
 
 .h1 {
@@ -26,7 +31,12 @@ header {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    transition: all .3s ease;
 
+}
+
+.menu:hover {
+    gap: 8px;
 }
 
 .menu .top {
@@ -137,13 +147,16 @@ main .an {
 }
 
 .sect1 {
-    height: 150vh;
+    height: 130vh;
     padding: 60px 135px 60px 130px;
 }
 
 .petit {
     font-size: 12px;
 
+}
+.tete {
+    align-items: center;
 }
 
 .text {
@@ -200,6 +213,8 @@ main .an {
     display: flex;
     align-items: flex-end;
     color: white;
+    padding: 12px;
+    background-repeat: no-repeat;
 
 
 }
@@ -213,14 +228,16 @@ main .an {
 
 .op {
     padding: 80px 135px;
+
 }
 
 
 .sect2 {
-    height: 80vh;
+    height: 90vh;
     padding: 80px 135px;
     background: linear-gradient(-120.99deg, transparent -27.77%, rgba(46, 178, 255, 0.71) 0px, rgba(255, 0, 108, 0.71) 79.64%), linear-gradient(0deg, rgb(0, 0, 0), transparent);
     color: white;
+
 }
 
 .part {
@@ -319,17 +336,15 @@ main .an {
 
 }
 
-.ty {
-
-}
+.ty {}
 
 .sect4 {
-    margin-top: 100px;
-   
+    margin-top: 200px;
+
 }
 
 .sect4 img {
-    
+
     width: 60%;
 }
 
@@ -342,4 +357,36 @@ main .an {
 
 .gauche p {
     margin-top: 30px;
+}
+
+.inp {
+    margin-top: 20px;
+    gap: 30px;
+
+
+}
+
+.inp input {
+    padding: 20px 12px;
+    border-radius: 12px;
+    border: 2px solid rgba(0, 0, 0, 0.726);
+}
+
+select {
+    padding: 20px 12px;
+    border-radius: 12px;
+    border: 2px solid rgba(0, 0, 0, 0.726);
+}
+
+::placeholder {
+    font-size: 17px;
+    font-style: italic;
+
+
+}
+
+.blo {
+    width: 300px;
+    height: 4px;
+    background-color: white;
 }
